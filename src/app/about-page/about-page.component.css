@@ -1,0 +1,46 @@
+/* styles.css or about-us.component.css */
+
+.about-us-content {
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  h2, h3 {
+    color:#7c459c;
+  }
+  
+  p {
+    color: black;
+    line-height: 1.6;
+  }
+  
+  /* Optional: Add a background color or image for visual appeal */
+  .about-us-content {
+    
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Optional: Style links for a consistent look */
+  a {
+    color: #007bff;
+    text-decoration: none;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+  }
+  /* styles.css or about-us.component.css */
+
+.highlight-link {
+    color: grey; /* Link color */
+    text-decoration: underline; /* Underline the link */
+    cursor: pointer; /* Show pointer cursor on hover for better user experience */
+  }
+  
+  .highlight-link:hover {
+    color:darkgray; /* Change color on hover if desired */
+  }
+  
+  

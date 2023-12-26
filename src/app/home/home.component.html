@@ -1,0 +1,48 @@
+<app-search></app-search>
+<app-tags></app-tags>
+
+<app-not-found [visible] = "!arts || arts.length <=0" resetLinkText="Search Again"></app-not-found>
+
+<ul class="arts">
+    <li *ngFor="let art of arts" class="peice">
+        <a href="" style="text-decoration: none;" routerLink="/art/{{art.id}}" class="each">
+            <img class = "img" src={{art.imageUrl}} alt="">
+            <div class="content" >
+                <div class="name">
+                    <span>🎨</span>
+                    {{art.name}}
+                </div>
+                <br>
+                <span class="favorite {{art.favorite?'':'not' }}">
+                    ❤
+                </span>
+
+                <div class="product-item-footer">
+                    <div class="origins">
+                        🏳
+                        <span *ngFor="let origin of art.origins">
+                            {{origin}}
+                        </span>
+                    </div>
+                    <div class="deliveryTime">
+                        <span>⏱</span>
+                        {{art.deliveryTime}}
+                    </div>
+                </div>
+                <br>
+                <div class="price">
+                      <span>{{art.price|currency}}</span>  
+                </div>
+            </div>
+        </a>
+    </li>
+</ul>
+
+<br><br><br><br><br><br><br><br><br><br>
+
+
+
+
+
+
+

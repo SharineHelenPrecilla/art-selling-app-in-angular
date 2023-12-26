@@ -1,0 +1,32 @@
+<app-not-found [visible] = "!art" notFoundMessage="Product not Found😞" resetLinkText="Back to HomePage"></app-not-found>
+
+
+<div *ngIf="art"  class="container">
+<img [src] = "art.imageUrl" [alt]="art.name">
+
+<div class="details">
+    <div class="header">
+            <span class="name"> {{art.name}} </span>
+            <span class="favorite {{art.favorite?'':'not'}}">
+                ❤
+            </span>
+    </div>
+    <br>
+    <div class="origins" *ngFor="let origin of art.origins">
+        {{origin}}
+    </div>
+    <div class="tags">
+        <app-tags [artPageTags]="art.tags" justifyContent="start"></app-tags>
+    </div>
+    <div class="delivery-time">
+        <span>{{art.deliveryTime}}</span>
+    </div>
+    <div class="price">
+        <span>
+            {{art.price|currency}}
+        </span>
+    </div>
+    <button (click)="addToCart()">Add to Cart</button>
+</div>
+</div>
+

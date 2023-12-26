@@ -1,0 +1,26 @@
+/* Add this to your styles.css or about-us.component.css */
+
+.contact-info {
+    margin-top: 20px;
+  }
+ 
+ 
+  
+  .contact-info h3 {
+    color: #7c459c;
+  }
+  
+  .contact-info p {
+    color: black;
+    line-height: 1.6;
+  }
+  
+  .contact-info .highlight-link {
+    color: #007bff;
+    text-decoration: underline;
+    cursor: pointer;
+  }
+  
+  .contact-info .highlight-link:hover {
+    color: #0056b3;
+  }
